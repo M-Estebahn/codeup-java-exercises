@@ -6,12 +6,12 @@ public class ControlFlowExercises {
             i++;
         }
 
-        int start = 100;
+       long start = 2;
 
         do {
             System.out.println(start);
-            start -= 5;
-        } while (start >= -10);
+            start*=start ;
+        } while (start <= 1000000);
 
 
     }
