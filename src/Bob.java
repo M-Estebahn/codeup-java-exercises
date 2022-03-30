@@ -18,7 +18,7 @@ public class Bob {
                 System.out.println("Sure");
                 continue;
             }
-            if (input.length() ==0){
+            if (input.isEmpty()){
                 System.out.println("Fine be that way!");
                 continue;
             }
