@@ -29,9 +29,9 @@ public class ArraysExercises {
         people1=new Person[people.length+1];
         for (int i=0;i<people.length;++i){
             people1[i]=people[i];
-        }people1[people.length]=human;
+        }
+        people1[people.length]=human;
         return people1;
-
         }
 
 
