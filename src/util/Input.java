@@ -3,10 +3,10 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private final Scanner scanner;
+    private static  Scanner scanner;
 
     public Input(){
-        this.scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in);
     }
 
     public String getString(){
@@ -48,7 +48,7 @@ public class Input {
         }
     }
 
-    public double getDouble() {
+    public static double getDouble() {
         System.out.println("enter a double");
         return scanner.nextDouble();
     }
