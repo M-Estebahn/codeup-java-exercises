@@ -1,8 +1,7 @@
-import org.w3c.dom.ls.LSOutput;
 import java.lang.Math;
 import java.util.Scanner;
 
-public class MethodExercises {
+public class MethodsExercises {
     Scanner sc = new Scanner(System.in);
     public static int addition(int x, int y){
         return x+y;
