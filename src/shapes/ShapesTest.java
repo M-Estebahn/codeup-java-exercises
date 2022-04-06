@@ -12,11 +12,17 @@ public class ShapesTest {
         Measurable MyShape=new Square(5);
         Measurable MyOtherShape=new Rectangle(4,5);
 
+//        Quadrilateral MyOtherOtherShape=new Rectangle(10,3);
+
         System.out.println(MyShape.getArea());
         System.out.println(MyShape.getPerimeter());
         System.out.println(MyOtherShape.getArea());
         System.out.println(MyOtherShape.getPerimeter());
         System.out.println(MyOtherShape);
-        System.out.println(MyShape);
+
+//        System.out.println(MyOtherOtherShape.getLength());
+//        System.out.println(MyOtherOtherShape.getWidth());
+//        System.out.println(MyOtherOtherShape.getPerimeter());
+//        System.out.println(MyOtherOtherShape.getArea());
     }
 }

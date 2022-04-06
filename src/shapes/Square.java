@@ -3,9 +3,8 @@ package shapes;
 public class Square extends Quadrilateral{
 
     protected Square(double side) {
-        super();
-        super.length=side;
-        super.width=side;
+        super(side,side);
+
     }
 
     @Override
