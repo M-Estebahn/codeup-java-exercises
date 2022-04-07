@@ -20,6 +20,10 @@ public class Student {
     public void addGrade(Integer grade){
         grades.add(grade);
     }
+    public ArrayList<Integer> getGrades(){
+        return grades;
+    }
+
     public double getGradeAverage(){
        double totalGrade=0;
 

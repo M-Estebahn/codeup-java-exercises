@@ -58,16 +58,18 @@ do {
     do {
         System.out.println("What student would you like information on");
         userInput = scanner.nextLine();
+
         System.out.println();
         if (students.containsKey(userInput)) {
-            System.out.printf("Name:%s - GitHub Username: %s %n Current Average: %.2f", students.get(userInput).getName(), userInput, (students.get(userInput).getGradeAverage()));
+            System.out.printf("Name:%s - GitHub Username: %s %n Current Average: %.2f  Grades: %s", students.get(userInput).getName(), userInput, (students.get(userInput).getGradeAverage()),students.get(userInput).getGrades());
         } else System.out.println("Sorry, no student found by that name");
 
     } while (!students.containsKey(userInput));
 
     System.out.println("\n Would you like to see another student?");
-    choice= scanner.next();
-    System.out.println();
+
+    choice= scanner.nextLine();
+
 }while (choice.equalsIgnoreCase("yes"));
 
 
