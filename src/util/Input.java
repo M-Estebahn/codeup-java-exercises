@@ -55,7 +55,7 @@ public class Input {
         try {
             if (Double.valueOf(userInput) > min && Double.valueOf(userInput) < max) {
                 System.out.println("double is within range");
-                return Double.valueOf(userInput);
+                return Double.parseDouble(userInput);
             } else {
                 System.out.println("try again");
                 return getDouble(min, max);
@@ -70,7 +70,7 @@ public class Input {
     public double getDouble() {
         System.out.println("enter a double");
         String userInput= getString();
-       try{ return Double.valueOf(userInput);
+       try{ return Double.parseDouble(userInput);
        }catch (NumberFormatException nfx){
            System.out.println("That's not a double");
        }return getDouble();

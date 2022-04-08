@@ -53,7 +53,7 @@ public class SyntaxTypesAndVariables {
 //boolean	1	A true or false value
         boolean myBool=true;
         System.out.println("myBool = " + myBool);
-// Reference data types
+// Reference fileio.data types
 // null if not assigned
 //String
         String myString="Double quotes for strings";
