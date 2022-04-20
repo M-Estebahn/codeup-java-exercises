@@ -72,7 +72,6 @@ public class FileIOLectureExercise {
             System.out.println("Error reading files " + dishesPath.getFileName());
             e.printStackTrace();
         }
-        fileData=Files.readAllLines(dishesPath);
         FileManager dishes=new FileManager(fileName,directory);
 
 

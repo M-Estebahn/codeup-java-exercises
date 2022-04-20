@@ -1,17 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-
-    int myFavoriteNumber= 59;
-        System.out.println("myFavoriteNumber = " + myFavoriteNumber);
-    String  myString   ="My First Java String";
+//        System.out.println("Hello World");
+//
+//    int myFavoriteNumber= 59;
+//        System.out.println("myFavoriteNumber = " + myFavoriteNumber);
+//    String  myString   ="My First Java String";
 //  String myString='m';
 //  String myString=3.14159
 
-        System.out.println("myString = " + myString);
-        double myNumber= 3.14;
-        System.out.println("myNumber = " + myNumber);
+//        System.out.println("myString = " + myString);
+//        double myNumber= 3.14;
+//        System.out.println("myNumber = " + myNumber);
 
 //        int x = 5;
 //        System.out.println(x++);
@@ -33,12 +35,24 @@ public class HelloWorld {
 //       y *= x;
 //        System.out.println("y = " + y);
 
-        int x = 10;
-        int y = 2;
-        x /=   y;
-        y -=   x;
-        System.out.println("y = " + y);
-        System.out.println("x = " + x);
+//        int x = 10;
+//        int y = 2;
+//        x /=   y;
+//        y -=   x;
+//        System.out.println("y = " + y);
+//        System.out.println("x = " + x);
+        String[] names = {"Rick", "Stacey", "Brad", "Becca"};
+        String x;
+        try {
+            x = names[100];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception caught!");
+            x = "";
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            System.out.println("This will always run.");
+        }
 
     }
 }
